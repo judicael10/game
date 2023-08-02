@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    scroll-behavior: smooth;
+}
+
+a,button{
+    cursor: pointer;
+}
+
+nav{
+    position: absolute;
+    top: 100px;
+    right: 50px;
+    width: 250px;
+}
+
+nav li a:hover {
+    color: olive;
+}
+
+.navigation{
+    position: fixed;
+    right: -500px;
+    width: 350px;
+    height: 100%;
+    background-color: #000;
+    transition: .5s;
+    display: none;
+}
+
+.navigation ul li{
+    color: #fff;
+    text-align: right;
+    text-transform: uppercase;
+    list-style-type: none;
+    font-size: 1.5em;
+    padding: 20px 30px;
+    width: 70%;
+    border-bottom: 1pt solid #252525;
+}
+
+.hamburger, .bar{
+    position: fixed;
+}
+
+.hamburger.open{
+    background:red;
+}
+.hamburger{
+    display: block;
+    top: 5%;
+    left: 95%;
+    width: 30px;
+    height: 30px;
+    transform: translateY(-50%);
+    border: 0;
+    background: white;
+    border-radius: 50px;
+    text-align: center ;
+    margin-left: -20px;
+    padding: auto;
+    left: 0;
+    margin-left: 20px;
+}
+
+.bar{
+    top: 3px;
+    background: #000;
+    width: 100%;
+    height: 4px;
+    transition: all .3s ease-in;
+}
+
+#bar2{
+    top: 11px;
+}
+
+#bar3{
+    top: 19px;
+}
+
+.navigation.active{
+    right: 0;
+    top: 0;
+}
+
+.hamburger.open #bar1{
+    background-color: #fff;
+    transform: rotate(45deg) translate(6px, 5px);
+}
+
+.hamburger.open #bar2{
+    background-color: transparent;
+}
+
+.hamburger.open #bar3{
+    background-color: #fff;
+    transform: rotate(-45deg) translate(6px, -5px);
+}
+
+
+
+
+header{
+    display: flex;
+    background: #000;
+    color: white;
+    justify-content: space-around; padding-bottom: 10px;
+    border-bottom: 1px solid white;
+    position: fixed;
+    top: 0;
+    z-index: -1px;
+}
+
+.menue ul{
+    display: flex;
+   gap: 80px;
+}
+.menue ul{
+    padding-top: 25px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 17px;
+}
+
+
+.menue ul li a{
+    color: white;
+    transition: .2s ease-out;
+    border-left: 1px solid olive;
+    padding-left: 20px;
+
+}
+
+.menue ul li a:hover{
+    color: olive;
+
+}
+body{
+    background: #000;
+    color: white;
+}
+
+
+
+.logo{
+    background: rgb(0, 0, 0);
+    color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 1px 2px 1px #fff; 
+    padding: 10px;
+}
+
+.logo:hover{
+    background:white;
+    color: #000;
+    transition: .2s ease;
+
+}
+.logoo{
+    color:olive;
+}
+
+
+
+
+
+.section1{
+    display: flex;
+
+    
+
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.section1 .image img{
+    height: 400px;
+}
+.texty{
+    width: 30%;
+    font-size: 30px;
+}
+.texty h2{
+    color: orange;
+}
+.setion2{
+    background: white;
+    margin-top: 40px;
+    padding-top: 20px;
+    color: #000;
+
+}
+
+.requi{
+    text-align: center;
+}
+.requi img{
+    height: 300px;
+}
+
+footer{
+    padding: 10px;
+    text-align: center;
+    
+}
+
+.diood{
+    text-align: center  ;
+}
+
+.setion2 p{
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media   (max-width: 991px) {
+    header{
+        width:100%;
+    }
+    .menue{
+        display: none;
+    }
+
+    .navigation{
+        display: block;
+    }
+    
+    .section1 .image img{
+        height: 190px;
+    }
+
+    .section1
+    {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+   
+    .texty{
+        font-size: 20px;
+        text-align: center;
+        margin-left: 130px;
+        margin-top: 20px;
+
+    }
+
+    .gemao{
+        display: flex;
+        margin-left: -30px;
+        gap: 10px;
+        margin-bottom: 30px;
+    }
+    .game{
+        display: flex;
+        margin-top: 20px;
+        flex-direction: column;
+        margin-left: -90px;
+    }
+}
+
